@@ -1,118 +1,137 @@
 export default function examplePage() {
-    return (
-      <div className='container'>
-        <title>Website</title>
-        <link rel='icon' href='/favicon.ico' />
+  return (
+    <div className="container">
+      <title>Website</title>
+      <link rel="icon" href="/favicon.ico" />
 
-        <main>
-          <div className='underline'>
-            <h1 className='title'>Hey, I'm Alex Mihaila! </h1>
-          </div>
-          <img
-            className='pic'
-            src='https://i.postimg.cc/qR2VgDkd/spiderman.jpg'
-            alt='alex mihaila'
-          />
+      <main>
+        <div className="heading">
+          <h1 className="title">Hey, I'm Alex Mihaila!</h1>
+        </div>
 
-          <p className='description'>
+        <div className="content">
+          <p className="description">
             Hey, my name is Alex Mihaila! I'm also from Canada, but I dislike the cold! I've been programming since High School. I'm mostly interested in the fields of AI, robotics, and game development. Speaking of game development, I've made a few games, with varying levels of success. I enjoy programming mostly because it gives me the tools required to create whatever I desire, with the only real finite limit being my imagination! On top of programming and other nerd stuff, I also enjoy exploring the outdoors and driving. I guess that's all of the fun facts I have!
           </p>
 
-          <a className='button' href='/'>
-            <p> Back to Home Page</p>
+          <a className="button" href="/">
+            <p>Back to Home Page</p>
           </a>
-        </main>
+        </div>
+      </main>
 
-        <style jsx>{`
-          .container {
-            min-height: 100vh;
-            padding: 0 0.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            max-width: 60rem;
-            margin: auto;
-          }
+      <style jsx>{`
+        .container {
+          min-height: 100vh;
+          padding: 0 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #f9f9f9;
+          max-width: 80rem;
+          margin: auto;
+        }
 
-          main {
-            padding: 5rem 0;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
+        main {
+          padding: 3rem 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
 
+        .heading {
+          margin-bottom: 2rem;
+        }
+
+        .title {
+          margin: 0;
+          font-size: 3.5rem;
+          font-weight: 700;
+          color: #333;
+        }
+
+        .content {
+          max-width: 800px;
+          padding: 1rem;
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+
+        .description {
+          line-height: 1.8;
+          font-size: 1.2rem;
+          color: #555;
+          margin-bottom: 2rem;
+        }
+
+        .button {
+          display: inline-block;
+          padding: 1rem 2rem;
+          background-color: #0070f3;
+          color: white;
+          font-size: 1.1rem;
+          font-weight: 600;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+          background-color: #005bb5;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:active {
+          background-color: #003f7d;
+          transform: translateY(0);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .button p {
+          margin: 0;
+        }
+
+        @media (max-width: 768px) {
           .title {
-            margin: 0;
-            line-height: 1.15;
-            font-size: 4rem;
-          }
-
-          .underline {
-            /* border-bottom: solid black; */
-            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
           }
 
           .description {
-            line-height: 1.5;
-            font-size: 1.5rem;
-          }
-
-          .pic {
-            height: 450px;
-            width: 450px;
+            font-size: 1rem;
           }
 
           .button {
-            /* margin: .5rem; */
-            flex-basis: 45%;
-            padding: 0.5rem;
-            text-align: left;
-            color: inherit;
-            text-decoration: none;
-            border: 1px solid #eaeaea;
-            border-radius: 10px;
-            transition: color 0.15s ease, border-color 0.15s ease;
-          }
-
-          .button:hover,
-          .button:focus,
-          .button:active {
-            color: #0070f3;
-            border-color: #0070f3;
-          }
-
-          .button p {
             font-size: 1rem;
-            font-weight: 600;
+            padding: 0.8rem 1.6rem;
           }
+        }
+      `}</style>
 
-          code {
-            background: #fafafa;
-            border-radius: 5px;
-            padding: 0.75rem;
-            font-size: 1.1rem;
-            font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-              DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-          }
-        `}</style>
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #f9f9f9;
+          color: #333;
+        }
 
-        <style jsx global>{`
-          html,
-          body {
-            padding: 0;
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-              Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-              sans-serif;
-          }
+        * {
+          box-sizing: border-box;
+        }
 
-          * {
-            box-sizing: border-box;
-          }
-        `}</style>
-      </div>
-    );
+        h1, p {
+          margin: 0;
+        }
+      `}</style>
+    </div>
+  );
 }
