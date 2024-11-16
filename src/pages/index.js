@@ -1,5 +1,3 @@
-<! -- https://6737d7d1ec54547cb3ece1d5--jocular-panda-d11edb.netlify.app/-->
-
 import Head from 'next/head'
 
 export default function Home() {
@@ -27,6 +25,11 @@ export default function Home() {
           <a href='/TomHolland ' className='card'>
             <h3>Example About Me Page &rarr;</h3>
             <p>Click here to navigate to an example page</p>
+          </a>
+
+	  <a href='/AlexMihaila ' className='card'>
+            <h3>Alex Mihaila's About Me! &rarr;</h3>
+            <p>Click here to navigate to a page!</p>
           </a>
 
           <a
