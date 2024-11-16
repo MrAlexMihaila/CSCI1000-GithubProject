@@ -11,11 +11,11 @@ export default function examplePage() {
           <img
             className='pic'
             src='https://i.postimg.cc/qR2VgDkd/spiderman.jpg'
-            alt='tom holland'
+            alt='Alex Mihaila'
           />
 
           <p className='description'>
-            Hey, my name is Alex Mihaila! I've been programming since High School"
+            Hey, my name is Alex Mihaila! I'm also from Canada, but I dislike the cold! I've been programming since High School. I'm mostly interested in the fields of AI, robotics, and game development. Speaking of game development, I've made a few games, with varying levels of success. I enjoy programming mostly because it gives me the tools required to create whatever I desire, with the only real finite limit being my imagination! On top of programming and other nerd stuff, I also enjoy exploring the outdoors and driving. I guess that's all of the fun facts I have."
           </p>
 
           <a className='button' href='/'>
