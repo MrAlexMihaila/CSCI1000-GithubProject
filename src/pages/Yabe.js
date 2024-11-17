@@ -6,20 +6,22 @@ export default function examplePage() {
 
       <main>
         <div className="heading">
-          <h1 className="title">Hey, I'm Alex Mihaila!</h1>
+          <h1 className="title">Hi, my name is Yabe!</h1>
         </div>
 
         <div className="content">
           <p className="description">
-<strong>About me:</strong><br />
-    💻 I'm a comp sci major (I have experience in Java, C++, GDScript, and a little bit of C#)<br />
-    💻 I've been programming since High School!<br />
-    🏝️Enjoy hiking and driving!<br />
+            <strong>About me:</strong><br />
+    💻I'm a CS major <br />
+    ♟️I used to play chess alot. <br />
+    ⚽I play soccer and 🏀basketball for fun.<br />
+    💻I video edit as a hobby. <br />
 
     <strong>Fun facts:</strong><br />
-    🌟 I've released a few games to varying levels of success.<br />
-    🌟 I can nerd out about a small but very specific list of things<br />
-    🌟 Love putting easter eggs in the things I code!
+    🌟I have 4 younger brothers. <br />
+    🌟I was born in Ethiopia.<br />
+    🌟I visted 11 states with my familiy so far. (Washington state, Colorado, New Mexico, California, Virgina, Kansas, Oregon, Texas, MaryLand, DC, and Arizona.
+
           </p>
 
           <a className="button" href="/">

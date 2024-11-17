@@ -28,8 +28,13 @@ export default function Home() {
             <p>Click here to navigate to the page!</p>
           </a>
 
-	<a href='/Sara ' className='card'>
+	<a href='/Sara' className='card'>
             <h3>Sara Nguyen's About Me! &rarr;</h3>
+            <p>Click here to navigate to the page!</p>
+          </a>
+	
+	<a href='/Yabe' className='card'>
+            <h3>Yabe Beneberu's About Me! &rarr;</h3>
             <p>Click here to navigate to the page!</p>
           </a>
         </div>
