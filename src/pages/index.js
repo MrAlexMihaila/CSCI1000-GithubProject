@@ -2,194 +2,162 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className='container'>
+    <div className="container">
       <Head>
-        <title>Website</title>
-        <link rel='icon' href='/favicon.ico' />
+        <title>Team Webapp</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className='title'>Congratulations! You've set up your webapp!</h1>
+        <h1 className="title">Welcome to our about me page!</h1>
 
-        <p className='description'>
-          Get started by editing <code>src/pages/index.js</code> to be your
-          project home page.
+        <p className="description">
+          Click on any of us to learn more!
         </p>
-        <p className='description2'>
-          Next, each team member will create their own about me file in the
-          pages directory:{' '}
-        </p>
-        <code>src/page/teamMemberName.js</code>
 
-        <div className='grid'>
-
-	  <a href='/AlexMihaila ' className='card'>
-            <h3>Alex Mihaila's About Me! &rarr;</h3>
-            <p>Click here to navigate to the page!</p>
+        <div className="grid">
+          <a href="/AlexMihaila" className="card">
+            <h3>Alex Mihaila's About Me &rarr;</h3>
+            <p>Click to learn more about Alex!</p>
           </a>
 
-	<a href='/Sara' className='card'>
-            <h3>Sara Nguyen's About Me! &rarr;</h3>
-            <p>Click here to navigate to the page!</p>
+          <a href="/Sara" className="card">
+            <h3>Sara Nguyen's About Me &rarr;</h3>
+            <p>Click to learn more about Sara!</p>
           </a>
-	
-	<a href='/Yabe' className='card'>
-            <h3>Yabe Beneberu's About Me! &rarr;</h3>
-            <p>Click here to navigate to the page!</p>
+
+          <a href="/Yabe" className="card">
+            <h3>Yabe Beneberu's About Me &rarr;</h3>
+            <p>Click to learn more about Yabe!</p>
+          </a>
+
+          <a href="/MarieViita" className="card">
+            <h3>Marie Viita's About Me &rarr;</h3>
+            <p>Click to learn more about Marie!</p>
           </a>
         </div>
       </main>
 
       <footer>
-        <a href='' target='_blank' rel='noopener noreferrer'>
-          Copyright CSCI 1000 2024
-        </a>
+        <p>&copy; CSCI 1000 2024 | All rights reserved</p>
       </footer>
 
       <style jsx>{`
         .container {
           min-height: 100vh;
-          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: space-between;
           align-items: center;
+          background: #f9fafb;
+          padding: 0 2rem;
         }
 
         main {
           padding: 5rem 0;
           flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
+          max-width: 1200px;
           width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
           text-align: center;
         }
 
+        footer {
+          padding: 1rem;
+          width: 100%;
+          background-color: #222;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .title {
+          font-size: 3rem;
+          font-weight: 700;
+          color: #333;
+          margin-bottom: 2rem;
+        }
+
         .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 1.25rem;
+          color: #666;
+          margin-bottom: 1.5rem;
+          line-height: 1.6;
         }
 
         .description2 {
-          line-height: 1.5;
-          font-size: 1.25rem;
+          font-size: 1.2rem;
+          color: #555;
+          margin-bottom: 1.5rem;
         }
 
         code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
+          background: #e6f4f1;
+          padding: 0.5rem 1rem;
           font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+          border-radius: 8px;
+          color: #4f79d4;
         }
 
         .grid {
           display: flex;
-          align-items: center;
-          justify-content: center;
           flex-wrap: wrap;
-
-          max-width: 800px;
+          justify-content: center;
+          gap: 2rem;
           margin-top: 3rem;
         }
 
         .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
+          background: #ffffff;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          padding: 2rem;
+          text-align: center;
+          width: 250px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+        .card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
         }
 
         .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
+          font-size: 1.4rem;
+          color: #0070f3;
+          margin-bottom: 1rem;
         }
 
         .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
+          font-size: 1rem;
+          color: #555;
         }
 
-        .logo {
-          height: 1em;
+        footer p {
+          font-size: 1rem;
+          color: #ddd;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
           .grid {
-            width: 100%;
             flex-direction: column;
+            align-items: center;
+          }
+
+          .title {
+            font-size: 2.5rem;
           }
         }
       `}</style>
 
       <style jsx global>{`
-        html,
-        body {
-          padding: 0;
+        html, body {
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          padding: 0;
+          font-family: 'Helvetica Neue', sans-serif;
+          background-color: #f4f4f4;
+          color: #333;
         }
 
         * {
